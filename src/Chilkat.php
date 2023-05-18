@@ -27,7 +27,6 @@ class Chilkat
     /**
      * Tries to unlock Chilkat bundle in trial mode or licenced mode.
      *
-     * @return void
      * @throws InvalidInitialization
      */
     private function unlockBundle(): void
@@ -41,8 +40,6 @@ class Chilkat
 
     /**
      * Gets license unlock status message.
-     *
-     * @return string
      */
     public function licenseUnlockStatusMessage(): string
     {
@@ -56,8 +53,6 @@ class Chilkat
 
     /**
      * Gets license unlock status.
-     *
-     * @return LicenseUnlockStatusEnum|null
      */
     private function licenseUnlockStatus(): ?LicenseUnlockStatusEnum
     {
@@ -68,6 +63,7 @@ class Chilkat
      * Checks for Chilkat PHP extension is loaded.
      *
      * @return $this
+     *
      * @throws InvalidInitialization
      */
     private function extensionLoaded(): static
@@ -81,8 +77,6 @@ class Chilkat
 
     /**
      * Gets the latest error text provided by Chilkat libs.
-     *
-     * @return string
      */
     public function lastErrorText(): string
     {
