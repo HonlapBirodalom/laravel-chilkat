@@ -7,6 +7,13 @@
 
 This package helps you to implement [Chilkat Software](https://www.chilkatsoft.com/) PHP libraries.
 
+Install instructions are at:  https://www.chilkatsoft.com/installPhpExtension.asp also
+see https://www.chilkatsoft.com/php.asp#debianInstall for apt-get installs for Debian/Ubuntu.
+
+Reference Documentation: https://www.chilkatsoft.com/refdoc/php.asp <br>
+Samples: https://www.example-code.com/php/default.asp <br>
+Blog: http://www.cknotes.com/
+
 ## Installation
 
 You can install the package via composer:
