@@ -7,14 +7,14 @@
 
 This package helps you to implement [Chilkat Software](https://www.chilkatsoft.com/) PHP libraries.
 
-Install instructions are at:  https://www.chilkatsoft.com/installPhpExtension.asp also
+## Installation
+
+### Chilkat PHP v9.5.0.94
+
+Required library install instructions are at:  https://www.chilkatsoft.com/installPhpExtension.asp also
 see https://www.chilkatsoft.com/php.asp#debianInstall for apt-get installs for Debian/Ubuntu.
 
-Reference Documentation: https://www.chilkatsoft.com/refdoc/php.asp <br>
-Samples: https://www.example-code.com/php/default.asp <br>
-Blog: http://www.cknotes.com/
-
-## Installation
+### Laravel
 
 You can install the package via composer:
 
@@ -32,6 +32,8 @@ This is the contents of the published config file:
 
 ```php
 return [
+
+    'license' => ... // Your Chilkat Software lisense.
 ];
 ```
 
@@ -41,6 +43,9 @@ return [
 $variable = new HonlapBirodalom\Chilkat();
 echo $variable->echoPhrase('Hello, HonlapBirodalom!');
 ```
+
+Reference Documentation: https://www.chilkatsoft.com/refdoc/php.asp <br>
+Samples: https://www.example-code.com/php/default.asp
 
 ## Testing
 
