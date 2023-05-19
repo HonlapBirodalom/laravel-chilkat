@@ -1,17 +1,22 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "honlapbirodalom/laravel-chilkat",
+    "description": "Laravel package for Chilkat PHP library.",
     "keywords": [
-        ":vendor_name",
+        "honlapbirodalom",
         "laravel",
-        ":package_slug"
+        "laravel-chilkat",
+        "laravel-package",
+        "chilkat",
+        "php",
+        "composer",
+        "composer-package"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/HonlapBirodalom/laravel-chilkat",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Gábor Szentpéteri",
+            "email": "webmaster@honlapbirodalom.hu",
             "role": "Developer"
         }
     ],
@@ -35,13 +40,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "HonlapBirodalom\\Chilkat\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "HonlapBirodalom\\Chilkat\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -49,7 +53,7 @@
         "analyse": "vendor/bin/phpstan analyse",
         "test": "vendor/bin/pest",
         "test-coverage": "vendor/bin/pest --coverage",
-        "format": "vendor/bin/pint"
+        "format": "vendor/bin/pint --config pint.json"
     },
     "config": {
         "sort-packages": true,
@@ -61,10 +65,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "HonlapBirodalom\\Chilkat\\ChilkatServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "Chilkat": "HonlapBirodalom\\Chilkat\\Facades\\Chilkat"
             }
         }
     },
