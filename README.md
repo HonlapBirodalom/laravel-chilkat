@@ -9,7 +9,9 @@ This package helps you to implement [Chilkat Software](https://www.chilkatsoft.c
 
 ## Installation
 
-### Chilkat PHP v9.5.0.94
+### Chilkat PHP
+
+__Complatibility:__ v9.5.0.94
 
 Required library install instructions are at:  https://www.chilkatsoft.com/installPhpExtension.asp also
 see https://www.chilkatsoft.com/php.asp#debianInstall for apt-get installs for Debian/Ubuntu.
@@ -40,8 +42,9 @@ return [
 ## Usage
 
 ```php
-$variable = new HonlapBirodalom\Chilkat();
-echo $variable->echoPhrase('Hello, HonlapBirodalom!');
+use HonlapBirodalom\Chilkat\Facades\Chilkat;
+
+Chilkat::initialize();
 ```
 
 Reference Documentation: https://www.chilkatsoft.com/refdoc/php.asp <br>
@@ -56,10 +59,6 @@ composer test
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Security Vulnerabilities
-
-Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
 
 ## Credits
 
