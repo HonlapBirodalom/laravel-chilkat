@@ -27,7 +27,7 @@ composer require honlapbirodalom/laravel-chilkat
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-chilkat-config"
+php artisan vendor:publish --tag="chilkat-config"
 ```
 
 This is the contents of the published config file:
