@@ -2,16 +2,16 @@
 
 namespace HonlapBirodalom\Chilkat\Facades;
 
+use HonlapBirodalom\Chilkat\Chilkat as ChilkatInstance;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static string licenseUnlockStatusMessage()
- * @method static string lastErrorText()
+ * @method static ChilkatInstance initialize()
  */
 class Chilkat extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return \HonlapBirodalom\Chilkat\Chilkat::class;
+        return ChilkatInstance::class;
     }
 }

@@ -14,14 +14,21 @@ class Chilkat
 
     private ?string $license;
 
-    /**
-     * @throws InvalidInitialization
-     */
     public function __construct()
     {
         $this->license = config('chilkat.license');
+    }
 
+    /**
+     * Initialize manage Chilkat license and extension.
+     *
+     * @throws InvalidInitialization
+     */
+    public function initialize(): static
+    {
         $this->extensionLoaded()->unlockBundle();
+
+        return $this;
     }
 
     /**
@@ -34,29 +41,21 @@ class Chilkat
         $this->chilkatGlobal = new CkGlobal();
 
         if (! $this->chilkatGlobal->UnlockBundle($this->license)) {
-            throw InvalidInitialization::couldNotUnlockLicense($this->licenseUnlockStatusMessage());
+            throw InvalidInitialization::couldNotUnlockLicense($this->licenseInfo());
         }
     }
 
     /**
      * Gets license unlock status message.
      */
-    public function licenseUnlockStatusMessage(): string
+    public function licenseInfo(): string
     {
-        return match ($this->licenseUnlockStatus()) {
+        return match (LicenseUnlockStatusEnum::tryFrom($this->chilkatGlobal->get_UnlockStatus())) {
             LicenseUnlockStatusEnum::NotUnlocked => 'Not unlocked.',
             LicenseUnlockStatusEnum::UnlockedWithFullTrial => 'Unlocked in trial mode.',
             LicenseUnlockStatusEnum::UnlockedWithLicense => 'Unlocked using purchased unlock code.',
             default => 'License unlock status not available.'
         };
-    }
-
-    /**
-     * Gets license unlock status.
-     */
-    private function licenseUnlockStatus(): ?LicenseUnlockStatusEnum
-    {
-        return LicenseUnlockStatusEnum::tryFrom($this->chilkatGlobal->get_UnlockStatus());
     }
 
     /**
@@ -76,10 +75,11 @@ class Chilkat
     }
 
     /**
-     * Gets the latest error text provided by Chilkat libs.
+     * Provides a means for updating global settings
+     * that affect all types of Chilkat objects across all instances.
      */
-    public function lastErrorText(): string
+    public function globalReferences(): CkGlobal
     {
-        return $this->chilkatGlobal->lastErrorText();
+        return $this->chilkatGlobal;
     }
 }
