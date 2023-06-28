@@ -2,6 +2,15 @@
 
 All notable changes to `laravel-chilkat` will be documented in this file.
 
+## 1.1.0 - 2023-06-28
+
+### What's Changed
+
+- Add Laravel 9 support by @SztpGabor in https://github.com/HonlapBirodalom/laravel-chilkat/pull/10
+- Bump version to 1.1.0 by @SztpGabor in https://github.com/HonlapBirodalom/laravel-chilkat/pull/11
+
+**Full Changelog**: https://github.com/HonlapBirodalom/laravel-chilkat/compare/1.0.1...1.1.0
+
 ## 1.0.1 - 2023-06-14
 
 ### What's Changed
