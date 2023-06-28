@@ -8,12 +8,12 @@ This package helps you to implement [Chilkat Software](https://www.chilkatsoft.c
 
 ## Installation
 
-### Chilkat PHP
+### Compatibility
 
-__Complatibility:__ v9.5.0.94
-
-Required library install instructions are at:  https://www.chilkatsoft.com/installPhpExtension.asp also
-see https://www.chilkatsoft.com/php.asp#debianInstall for apt-get installs for Debian/Ubuntu.
+| Plugin version | Laravel version | PHP version | Chilkat PHP version |
+|:---------------|:----------------|:------------|:--------------------|
+| 1.x            | 9.x (\>=9.28)   | \>= 8.0     | 9.5.0.94            |
+| 1.x            | 10.x (\>=10.0)  | \>= 8.1     | 9.5.0.94            |
 
 ### Laravel
 
@@ -38,6 +38,11 @@ return [
 ];
 ```
 
+### Chilkat
+
+Required library install instructions are at:  https://www.chilkatsoft.com/installPhpExtension.asp also
+see https://www.chilkatsoft.com/php.asp#debianInstall for apt-get installs for Debian/Ubuntu.
+
 ## Usage
 
 ```php
@@ -58,6 +63,10 @@ composer test
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
+## Security Vulnerabilities
+
+Please review [our security policy](../../security/policy) on how to report security vulnerabilities.
 
 ## Credits
 
