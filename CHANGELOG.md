@@ -2,6 +2,16 @@
 
 All notable changes to `laravel-chilkat` will be documented in this file.
 
+## 1.1.1 - 2023-08-15
+
+### What's Changed
+
+- Bump dependabot/fetch-metadata from 1.5.1 to 1.6.0 by @dependabot in https://github.com/HonlapBirodalom/laravel-chilkat/pull/12
+- Feature/1.x/add spatie changes by @SztpGabor in https://github.com/HonlapBirodalom/laravel-chilkat/pull/14
+- Bump version to 1.1.1 by @SztpGabor in https://github.com/HonlapBirodalom/laravel-chilkat/pull/15
+
+**Full Changelog**: https://github.com/HonlapBirodalom/laravel-chilkat/compare/1.1.0...1.1.1
+
 ## 1.1.0 - 2023-06-28
 
 ### What's Changed
