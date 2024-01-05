@@ -2,6 +2,17 @@
 
 All notable changes to `laravel-chilkat` will be documented in this file.
 
+## 1.2.0 - 2024-01-05
+
+### What's Changed
+
+* Bump actions/checkout from 3 to 4 by @dependabot in https://github.com/HonlapBirodalom/laravel-chilkat/pull/16
+* Bump stefanzweifel/git-auto-commit-action from 4 to 5 by @dependabot in https://github.com/HonlapBirodalom/laravel-chilkat/pull/17
+* Bump aglipanci/laravel-pint-action from 2.3.0 to 2.3.1 by @dependabot in https://github.com/HonlapBirodalom/laravel-chilkat/pull/18
+* Spatie changes and package updates by @SztpGabor in https://github.com/HonlapBirodalom/laravel-chilkat/pull/19
+
+**Full Changelog**: https://github.com/HonlapBirodalom/laravel-chilkat/compare/1.1.1...1.2.0
+
 ## 1.1.1 - 2023-08-15
 
 ### What's Changed
