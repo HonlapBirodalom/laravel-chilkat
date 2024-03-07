@@ -5,851 +5,801 @@ namespace HonlapBirodalom\Chilkat\Generated;
 class CkMht
 {
     public $_cPtr = null;
+    protected $_pData = array();
 
-    protected $_pData = [];
-
-    public function __construct($res = null)
+    function __construct($res = null)
     {
         if (is_resource($res) && get_resource_type($res) === '_p_CkMht') {
             $this->_cPtr = $res;
-
             return;
         }
         $this->_cPtr = new_CkMht();
     }
 
-    public function __get($var)
+    function __get($var)
     {
-        if ($var === 'thisown') {
-            return swig_chilkat_9_5_0_get_newobject($this->_cPtr);
-        }
-
+        if ($var === 'thisown') return swig_chilkat_9_5_0_get_newobject($this->_cPtr);
         return $this->_pData[$var];
     }
 
-    public function __set($var, $value)
+    function __set($var, $value)
     {
-        if ($var === 'thisown') {
-            return swig_chilkat_9_5_0_alter_newobject($this->_cPtr, $value);
-        }
+        if ($var === 'thisown') return swig_chilkat_9_5_0_alter_newobject($this->_cPtr, $value);
         $this->_pData[$var] = $value;
     }
 
-    public function __isset($var)
+    function __isset($var)
     {
-        if ($var === 'thisown') {
-            return true;
-        }
-
+        if ($var === 'thisown') return true;
         return array_key_exists($var, $this->_pData);
     }
 
-    public function get_Utf8()
+    function get_Utf8()
     {
         return CkMht_get_Utf8($this->_cPtr);
     }
 
-    public function put_Utf8($b)
+    function put_Utf8($b)
     {
         CkMht_put_Utf8($this->_cPtr, $b);
     }
 
-    public function put_EventCallbackObject($progress)
+    function put_EventCallbackObject($progress)
     {
         CkMht_put_EventCallbackObject($this->_cPtr, $progress);
     }
 
-    public function get_AbortCurrent()
+    function get_AbortCurrent()
     {
         return CkMht_get_AbortCurrent($this->_cPtr);
     }
 
-    public function put_AbortCurrent($newVal)
+    function put_AbortCurrent($newVal)
     {
         CkMht_put_AbortCurrent($this->_cPtr, $newVal);
     }
 
-    public function get_BaseUrl($str)
+    function get_BaseUrl($str)
     {
         CkMht_get_BaseUrl($this->_cPtr, $str);
     }
 
-    public function baseUrl()
+    function baseUrl()
     {
         return CkMht_baseUrl($this->_cPtr);
     }
 
-    public function put_BaseUrl($newVal)
+    function put_BaseUrl($newVal)
     {
         CkMht_put_BaseUrl($this->_cPtr, $newVal);
     }
 
-    public function get_ConnectTimeout()
+    function get_ConnectTimeout()
     {
         return CkMht_get_ConnectTimeout($this->_cPtr);
     }
 
-    public function put_ConnectTimeout($newVal)
+    function put_ConnectTimeout($newVal)
     {
         CkMht_put_ConnectTimeout($this->_cPtr, $newVal);
     }
 
-    public function get_DebugHtmlAfter($str)
+    function get_DebugHtmlAfter($str)
     {
         CkMht_get_DebugHtmlAfter($this->_cPtr, $str);
     }
 
-    public function debugHtmlAfter()
+    function debugHtmlAfter()
     {
         return CkMht_debugHtmlAfter($this->_cPtr);
     }
 
-    public function put_DebugHtmlAfter($newVal)
+    function put_DebugHtmlAfter($newVal)
     {
         CkMht_put_DebugHtmlAfter($this->_cPtr, $newVal);
     }
 
-    public function get_DebugHtmlBefore($str)
+    function get_DebugHtmlBefore($str)
     {
         CkMht_get_DebugHtmlBefore($this->_cPtr, $str);
     }
 
-    public function debugHtmlBefore()
+    function debugHtmlBefore()
     {
         return CkMht_debugHtmlBefore($this->_cPtr);
     }
 
-    public function put_DebugHtmlBefore($newVal)
+    function put_DebugHtmlBefore($newVal)
     {
         CkMht_put_DebugHtmlBefore($this->_cPtr, $newVal);
     }
 
-    public function get_DebugLogFilePath($str)
+    function get_DebugLogFilePath($str)
     {
         CkMht_get_DebugLogFilePath($this->_cPtr, $str);
     }
 
-    public function debugLogFilePath()
+    function debugLogFilePath()
     {
         return CkMht_debugLogFilePath($this->_cPtr);
     }
 
-    public function put_DebugLogFilePath($newVal)
+    function put_DebugLogFilePath($newVal)
     {
         CkMht_put_DebugLogFilePath($this->_cPtr, $newVal);
     }
 
-    public function get_DebugTagCleaning()
+    function get_DebugTagCleaning()
     {
         return CkMht_get_DebugTagCleaning($this->_cPtr);
     }
 
-    public function put_DebugTagCleaning($newVal)
+    function put_DebugTagCleaning($newVal)
     {
         CkMht_put_DebugTagCleaning($this->_cPtr, $newVal);
     }
 
-    public function get_EmbedImages()
+    function get_EmbedImages()
     {
         return CkMht_get_EmbedImages($this->_cPtr);
     }
 
-    public function put_EmbedImages($newVal)
+    function put_EmbedImages($newVal)
     {
         CkMht_put_EmbedImages($this->_cPtr, $newVal);
     }
 
-    public function get_EmbedLocalOnly()
+    function get_EmbedLocalOnly()
     {
         return CkMht_get_EmbedLocalOnly($this->_cPtr);
     }
 
-    public function put_EmbedLocalOnly($newVal)
+    function put_EmbedLocalOnly($newVal)
     {
         CkMht_put_EmbedLocalOnly($this->_cPtr, $newVal);
     }
 
-    public function get_FetchFromCache()
+    function get_FetchFromCache()
     {
         return CkMht_get_FetchFromCache($this->_cPtr);
     }
 
-    public function put_FetchFromCache($newVal)
+    function put_FetchFromCache($newVal)
     {
         CkMht_put_FetchFromCache($this->_cPtr, $newVal);
     }
 
-    public function get_HeartbeatMs()
+    function get_HeartbeatMs()
     {
         return CkMht_get_HeartbeatMs($this->_cPtr);
     }
 
-    public function put_HeartbeatMs($newVal)
+    function put_HeartbeatMs($newVal)
     {
         CkMht_put_HeartbeatMs($this->_cPtr, $newVal);
     }
 
-    public function get_IgnoreMustRevalidate()
+    function get_IgnoreMustRevalidate()
     {
         return CkMht_get_IgnoreMustRevalidate($this->_cPtr);
     }
 
-    public function put_IgnoreMustRevalidate($newVal)
+    function put_IgnoreMustRevalidate($newVal)
     {
         CkMht_put_IgnoreMustRevalidate($this->_cPtr, $newVal);
     }
 
-    public function get_IgnoreNoCache()
+    function get_IgnoreNoCache()
     {
         return CkMht_get_IgnoreNoCache($this->_cPtr);
     }
 
-    public function put_IgnoreNoCache($newVal)
+    function put_IgnoreNoCache($newVal)
     {
         CkMht_put_IgnoreNoCache($this->_cPtr, $newVal);
     }
 
-    public function get_LastErrorHtml($str)
+    function get_LastErrorHtml($str)
     {
         CkMht_get_LastErrorHtml($this->_cPtr, $str);
     }
 
-    public function lastErrorHtml()
+    function lastErrorHtml()
     {
         return CkMht_lastErrorHtml($this->_cPtr);
     }
 
-    public function get_LastErrorText($str)
+    function get_LastErrorText($str)
     {
         CkMht_get_LastErrorText($this->_cPtr, $str);
     }
 
-    public function lastErrorText()
+    function lastErrorText()
     {
         return CkMht_lastErrorText($this->_cPtr);
     }
 
-    public function get_LastErrorXml($str)
+    function get_LastErrorXml($str)
     {
         CkMht_get_LastErrorXml($this->_cPtr, $str);
     }
 
-    public function lastErrorXml()
+    function lastErrorXml()
     {
         return CkMht_lastErrorXml($this->_cPtr);
     }
 
-    public function get_LastMethodSuccess()
+    function get_LastMethodSuccess()
     {
         return CkMht_get_LastMethodSuccess($this->_cPtr);
     }
 
-    public function put_LastMethodSuccess($newVal)
+    function put_LastMethodSuccess($newVal)
     {
         CkMht_put_LastMethodSuccess($this->_cPtr, $newVal);
     }
 
-    public function get_NoScripts()
+    function get_NoScripts()
     {
         return CkMht_get_NoScripts($this->_cPtr);
     }
 
-    public function put_NoScripts($newVal)
+    function put_NoScripts($newVal)
     {
         CkMht_put_NoScripts($this->_cPtr, $newVal);
     }
 
-    public function get_NtlmAuth()
+    function get_NtlmAuth()
     {
         return CkMht_get_NtlmAuth($this->_cPtr);
     }
 
-    public function put_NtlmAuth($newVal)
+    function put_NtlmAuth($newVal)
     {
         CkMht_put_NtlmAuth($this->_cPtr, $newVal);
     }
 
-    public function get_NumCacheLevels()
+    function get_NumCacheLevels()
     {
         return CkMht_get_NumCacheLevels($this->_cPtr);
     }
 
-    public function put_NumCacheLevels($newVal)
+    function put_NumCacheLevels($newVal)
     {
         CkMht_put_NumCacheLevels($this->_cPtr, $newVal);
     }
 
-    public function get_NumCacheRoots()
+    function get_NumCacheRoots()
     {
         return CkMht_get_NumCacheRoots($this->_cPtr);
     }
 
-    public function get_PreferIpv6()
+    function get_PreferIpv6()
     {
         return CkMht_get_PreferIpv6($this->_cPtr);
     }
 
-    public function put_PreferIpv6($newVal)
+    function put_PreferIpv6($newVal)
     {
         CkMht_put_PreferIpv6($this->_cPtr, $newVal);
     }
 
-    public function get_PreferMHTScripts()
+    function get_PreferMHTScripts()
     {
         return CkMht_get_PreferMHTScripts($this->_cPtr);
     }
 
-    public function put_PreferMHTScripts($newVal)
+    function put_PreferMHTScripts($newVal)
     {
         CkMht_put_PreferMHTScripts($this->_cPtr, $newVal);
     }
 
-    public function get_Proxy($str)
+    function get_Proxy($str)
     {
         CkMht_get_Proxy($this->_cPtr, $str);
     }
 
-    public function proxy()
+    function proxy()
     {
         return CkMht_proxy($this->_cPtr);
     }
 
-    public function put_Proxy($newVal)
+    function put_Proxy($newVal)
     {
         CkMht_put_Proxy($this->_cPtr, $newVal);
     }
 
-    public function get_ProxyLogin($str)
+    function get_ProxyLogin($str)
     {
         CkMht_get_ProxyLogin($this->_cPtr, $str);
     }
 
-    public function proxyLogin()
+    function proxyLogin()
     {
         return CkMht_proxyLogin($this->_cPtr);
     }
 
-    public function put_ProxyLogin($newVal)
+    function put_ProxyLogin($newVal)
     {
         CkMht_put_ProxyLogin($this->_cPtr, $newVal);
     }
 
-    public function get_ProxyPassword($str)
+    function get_ProxyPassword($str)
     {
         CkMht_get_ProxyPassword($this->_cPtr, $str);
     }
 
-    public function proxyPassword()
+    function proxyPassword()
     {
         return CkMht_proxyPassword($this->_cPtr);
     }
 
-    public function put_ProxyPassword($newVal)
+    function put_ProxyPassword($newVal)
     {
         CkMht_put_ProxyPassword($this->_cPtr, $newVal);
     }
 
-    public function get_ReadTimeout()
+    function get_ReadTimeout()
     {
         return CkMht_get_ReadTimeout($this->_cPtr);
     }
 
-    public function put_ReadTimeout($newVal)
+    function put_ReadTimeout($newVal)
     {
         CkMht_put_ReadTimeout($this->_cPtr, $newVal);
     }
 
-    public function get_RequireSslCertVerify()
+    function get_RequireSslCertVerify()
     {
         return CkMht_get_RequireSslCertVerify($this->_cPtr);
     }
 
-    public function put_RequireSslCertVerify($newVal)
+    function put_RequireSslCertVerify($newVal)
     {
         CkMht_put_RequireSslCertVerify($this->_cPtr, $newVal);
     }
 
-    public function get_SocksHostname($str)
+    function get_SocksHostname($str)
     {
         CkMht_get_SocksHostname($this->_cPtr, $str);
     }
 
-    public function socksHostname()
+    function socksHostname()
     {
         return CkMht_socksHostname($this->_cPtr);
     }
 
-    public function put_SocksHostname($newVal)
+    function put_SocksHostname($newVal)
     {
         CkMht_put_SocksHostname($this->_cPtr, $newVal);
     }
 
-    public function get_SocksPassword($str)
+    function get_SocksPassword($str)
     {
         CkMht_get_SocksPassword($this->_cPtr, $str);
     }
 
-    public function socksPassword()
+    function socksPassword()
     {
         return CkMht_socksPassword($this->_cPtr);
     }
 
-    public function put_SocksPassword($newVal)
+    function put_SocksPassword($newVal)
     {
         CkMht_put_SocksPassword($this->_cPtr, $newVal);
     }
 
-    public function get_SocksPort()
+    function get_SocksPort()
     {
         return CkMht_get_SocksPort($this->_cPtr);
     }
 
-    public function put_SocksPort($newVal)
+    function put_SocksPort($newVal)
     {
         CkMht_put_SocksPort($this->_cPtr, $newVal);
     }
 
-    public function get_SocksUsername($str)
+    function get_SocksUsername($str)
     {
         CkMht_get_SocksUsername($this->_cPtr, $str);
     }
 
-    public function socksUsername()
+    function socksUsername()
     {
         return CkMht_socksUsername($this->_cPtr);
     }
 
-    public function put_SocksUsername($newVal)
+    function put_SocksUsername($newVal)
     {
         CkMht_put_SocksUsername($this->_cPtr, $newVal);
     }
 
-    public function get_SocksVersion()
+    function get_SocksVersion()
     {
         return CkMht_get_SocksVersion($this->_cPtr);
     }
 
-    public function put_SocksVersion($newVal)
+    function put_SocksVersion($newVal)
     {
         CkMht_put_SocksVersion($this->_cPtr, $newVal);
     }
 
-    public function get_UnpackDirect()
+    function get_UnpackDirect()
     {
         return CkMht_get_UnpackDirect($this->_cPtr);
     }
 
-    public function put_UnpackDirect($newVal)
+    function put_UnpackDirect($newVal)
     {
         CkMht_put_UnpackDirect($this->_cPtr, $newVal);
     }
 
-    public function get_UnpackUseRelPaths()
+    function get_UnpackUseRelPaths()
     {
         return CkMht_get_UnpackUseRelPaths($this->_cPtr);
     }
 
-    public function put_UnpackUseRelPaths($newVal)
+    function put_UnpackUseRelPaths($newVal)
     {
         CkMht_put_UnpackUseRelPaths($this->_cPtr, $newVal);
     }
 
-    public function get_UpdateCache()
+    function get_UpdateCache()
     {
         return CkMht_get_UpdateCache($this->_cPtr);
     }
 
-    public function put_UpdateCache($newVal)
+    function put_UpdateCache($newVal)
     {
         CkMht_put_UpdateCache($this->_cPtr, $newVal);
     }
 
-    public function get_UseCids()
+    function get_UseCids()
     {
         return CkMht_get_UseCids($this->_cPtr);
     }
 
-    public function put_UseCids($newVal)
+    function put_UseCids($newVal)
     {
         CkMht_put_UseCids($this->_cPtr, $newVal);
     }
 
-    public function get_UseFilename()
+    function get_UseFilename()
     {
         return CkMht_get_UseFilename($this->_cPtr);
     }
 
-    public function put_UseFilename($newVal)
+    function put_UseFilename($newVal)
     {
         CkMht_put_UseFilename($this->_cPtr, $newVal);
     }
 
-    public function get_UseIEProxy()
+    function get_UseIEProxy()
     {
         return CkMht_get_UseIEProxy($this->_cPtr);
     }
 
-    public function put_UseIEProxy($newVal)
+    function put_UseIEProxy($newVal)
     {
         CkMht_put_UseIEProxy($this->_cPtr, $newVal);
     }
 
-    public function get_UseInline()
+    function get_UseInline()
     {
         return CkMht_get_UseInline($this->_cPtr);
     }
 
-    public function put_UseInline($newVal)
+    function put_UseInline($newVal)
     {
         CkMht_put_UseInline($this->_cPtr, $newVal);
     }
 
-    public function get_VerboseLogging()
+    function get_VerboseLogging()
     {
         return CkMht_get_VerboseLogging($this->_cPtr);
     }
 
-    public function put_VerboseLogging($newVal)
+    function put_VerboseLogging($newVal)
     {
         CkMht_put_VerboseLogging($this->_cPtr, $newVal);
     }
 
-    public function get_Version($str)
+    function get_Version($str)
     {
         CkMht_get_Version($this->_cPtr, $str);
     }
 
-    public function version()
+    function version()
     {
         return CkMht_version($this->_cPtr);
     }
 
-    public function get_WebSiteLogin($str)
+    function get_WebSiteLogin($str)
     {
         CkMht_get_WebSiteLogin($this->_cPtr, $str);
     }
 
-    public function webSiteLogin()
+    function webSiteLogin()
     {
         return CkMht_webSiteLogin($this->_cPtr);
     }
 
-    public function put_WebSiteLogin($newVal)
+    function put_WebSiteLogin($newVal)
     {
         CkMht_put_WebSiteLogin($this->_cPtr, $newVal);
     }
 
-    public function get_WebSiteLoginDomain($str)
+    function get_WebSiteLoginDomain($str)
     {
         CkMht_get_WebSiteLoginDomain($this->_cPtr, $str);
     }
 
-    public function webSiteLoginDomain()
+    function webSiteLoginDomain()
     {
         return CkMht_webSiteLoginDomain($this->_cPtr);
     }
 
-    public function put_WebSiteLoginDomain($newVal)
+    function put_WebSiteLoginDomain($newVal)
     {
         CkMht_put_WebSiteLoginDomain($this->_cPtr, $newVal);
     }
 
-    public function get_WebSitePassword($str)
+    function get_WebSitePassword($str)
     {
         CkMht_get_WebSitePassword($this->_cPtr, $str);
     }
 
-    public function webSitePassword()
+    function webSitePassword()
     {
         return CkMht_webSitePassword($this->_cPtr);
     }
 
-    public function put_WebSitePassword($newVal)
+    function put_WebSitePassword($newVal)
     {
         CkMht_put_WebSitePassword($this->_cPtr, $newVal);
     }
 
-    public function AddCacheRoot($dir)
+    function AddCacheRoot($dir)
     {
         CkMht_AddCacheRoot($this->_cPtr, $dir);
     }
 
-    public function AddCustomHeader($name, $value)
+    function AddCustomHeader($name, $value)
     {
         CkMht_AddCustomHeader($this->_cPtr, $name, $value);
     }
 
-    public function AddExternalStyleSheet($url)
+    function AddExternalStyleSheet($url)
     {
         CkMht_AddExternalStyleSheet($this->_cPtr, $url);
     }
 
-    public function ClearCustomHeaders()
+    function ClearCustomHeaders()
     {
         CkMht_ClearCustomHeaders($this->_cPtr);
     }
 
-    public function ExcludeImagesMatching($pattern)
+    function ExcludeImagesMatching($pattern)
     {
         CkMht_ExcludeImagesMatching($this->_cPtr, $pattern);
     }
 
-    public function GetAndSaveEML($url_or_htmlFilepath, $emlPath)
+    function GetAndSaveEML($url_or_htmlFilepath, $emlPath)
     {
         return CkMht_GetAndSaveEML($this->_cPtr, $url_or_htmlFilepath, $emlPath);
     }
 
-    public function GetAndSaveEMLAsync($url_or_htmlFilepath, $emlPath)
+    function GetAndSaveEMLAsync($url_or_htmlFilepath, $emlPath)
     {
         $r = CkMht_GetAndSaveEMLAsync($this->_cPtr, $url_or_htmlFilepath, $emlPath);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function GetAndSaveMHT($url_or_htmlFilepath, $mhtPath)
+    function GetAndSaveMHT($url_or_htmlFilepath, $mhtPath)
     {
         return CkMht_GetAndSaveMHT($this->_cPtr, $url_or_htmlFilepath, $mhtPath);
     }
 
-    public function GetAndSaveMHTAsync($url_or_htmlFilepath, $mhtPath)
+    function GetAndSaveMHTAsync($url_or_htmlFilepath, $mhtPath)
     {
         $r = CkMht_GetAndSaveMHTAsync($this->_cPtr, $url_or_htmlFilepath, $mhtPath);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function GetAndZipEML($url_or_htmlFilepath, $zipEntryFilename, $zipFilename)
+    function GetAndZipEML($url_or_htmlFilepath, $zipEntryFilename, $zipFilename)
     {
         return CkMht_GetAndZipEML($this->_cPtr, $url_or_htmlFilepath, $zipEntryFilename, $zipFilename);
     }
 
-    public function GetAndZipEMLAsync($url_or_htmlFilepath, $zipEntryFilename, $zipFilename)
+    function GetAndZipEMLAsync($url_or_htmlFilepath, $zipEntryFilename, $zipFilename)
     {
         $r = CkMht_GetAndZipEMLAsync($this->_cPtr, $url_or_htmlFilepath, $zipEntryFilename, $zipFilename);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function GetAndZipMHT($url_or_htmlFilepath, $zipEntryFilename, $zipFilename)
+    function GetAndZipMHT($url_or_htmlFilepath, $zipEntryFilename, $zipFilename)
     {
         return CkMht_GetAndZipMHT($this->_cPtr, $url_or_htmlFilepath, $zipEntryFilename, $zipFilename);
     }
 
-    public function GetAndZipMHTAsync($url_or_htmlFilepath, $zipEntryFilename, $zipFilename)
+    function GetAndZipMHTAsync($url_or_htmlFilepath, $zipEntryFilename, $zipFilename)
     {
         $r = CkMht_GetAndZipMHTAsync($this->_cPtr, $url_or_htmlFilepath, $zipEntryFilename, $zipFilename);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function getCacheRoot($index)
+    function getCacheRoot($index)
     {
         return CkMht_getCacheRoot($this->_cPtr, $index);
     }
 
-    public function cacheRoot($index)
+    function cacheRoot($index)
     {
         return CkMht_cacheRoot($this->_cPtr, $index);
     }
 
-    public function getEML($url_or_htmlFilepath)
+    function getEML($url_or_htmlFilepath)
     {
         return CkMht_getEML($this->_cPtr, $url_or_htmlFilepath);
     }
 
-    public function eML($url_or_htmlFilepath)
+    function eML($url_or_htmlFilepath)
     {
         return CkMht_eML($this->_cPtr, $url_or_htmlFilepath);
     }
 
-    public function GetEMLAsync($url_or_htmlFilepath)
+    function GetEMLAsync($url_or_htmlFilepath)
     {
         $r = CkMht_GetEMLAsync($this->_cPtr, $url_or_htmlFilepath);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function getMHT($url_or_htmlFilepath)
+    function getMHT($url_or_htmlFilepath)
     {
         return CkMht_getMHT($this->_cPtr, $url_or_htmlFilepath);
     }
 
-    public function mHT($url_or_htmlFilepath)
+    function mHT($url_or_htmlFilepath)
     {
         return CkMht_mHT($this->_cPtr, $url_or_htmlFilepath);
     }
 
-    public function GetMHTAsync($url_or_htmlFilepath)
+    function GetMHTAsync($url_or_htmlFilepath)
     {
         $r = CkMht_GetMHTAsync($this->_cPtr, $url_or_htmlFilepath);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function htmlToEML($htmlText)
+    function htmlToEML($htmlText)
     {
         return CkMht_htmlToEML($this->_cPtr, $htmlText);
     }
 
-    public function HtmlToEMLAsync($htmlText)
+    function HtmlToEMLAsync($htmlText)
     {
         $r = CkMht_HtmlToEMLAsync($this->_cPtr, $htmlText);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function HtmlToEMLFile($html, $emlFilename)
+    function HtmlToEMLFile($html, $emlFilename)
     {
         return CkMht_HtmlToEMLFile($this->_cPtr, $html, $emlFilename);
     }
 
-    public function HtmlToEMLFileAsync($html, $emlFilename)
+    function HtmlToEMLFileAsync($html, $emlFilename)
     {
         $r = CkMht_HtmlToEMLFileAsync($this->_cPtr, $html, $emlFilename);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function htmlToMHT($htmlText)
+    function htmlToMHT($htmlText)
     {
         return CkMht_htmlToMHT($this->_cPtr, $htmlText);
     }
 
-    public function HtmlToMHTAsync($htmlText)
+    function HtmlToMHTAsync($htmlText)
     {
         $r = CkMht_HtmlToMHTAsync($this->_cPtr, $htmlText);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function HtmlToMHTFile($html, $mhtFilename)
+    function HtmlToMHTFile($html, $mhtFilename)
     {
         return CkMht_HtmlToMHTFile($this->_cPtr, $html, $mhtFilename);
     }
 
-    public function HtmlToMHTFileAsync($html, $mhtFilename)
+    function HtmlToMHTFileAsync($html, $mhtFilename)
     {
         $r = CkMht_HtmlToMHTFileAsync($this->_cPtr, $html, $mhtFilename);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function IsUnlocked()
+    function IsUnlocked()
     {
         return CkMht_IsUnlocked($this->_cPtr);
     }
 
-    public function LoadTaskCaller($task)
+    function LoadTaskCaller($task)
     {
         return CkMht_LoadTaskCaller($this->_cPtr, $task);
     }
 
-    public function RemoveCustomHeader($name)
+    function RemoveCustomHeader($name)
     {
         CkMht_RemoveCustomHeader($this->_cPtr, $name);
     }
 
-    public function RestoreDefaults()
+    function RestoreDefaults()
     {
         CkMht_RestoreDefaults($this->_cPtr);
     }
 
-    public function SaveLastError($path)
+    function SaveLastError($path)
     {
         return CkMht_SaveLastError($this->_cPtr, $path);
     }
 
-    public function UnlockComponent($unlockCode)
+    function UnlockComponent($unlockCode)
     {
         return CkMht_UnlockComponent($this->_cPtr, $unlockCode);
     }
 
-    public function UnpackMHT($mhtFilename, $unpackDir, $htmlFilename, $partsSubDir)
+    function UnpackMHT($mhtFilename, $unpackDir, $htmlFilename, $partsSubDir)
     {
         return CkMht_UnpackMHT($this->_cPtr, $mhtFilename, $unpackDir, $htmlFilename, $partsSubDir);
     }
 
-    public function UnpackMHTString($mhtString, $unpackDir, $htmlFilename, $partsSubDir)
+    function UnpackMHTString($mhtString, $unpackDir, $htmlFilename, $partsSubDir)
     {
         return CkMht_UnpackMHTString($this->_cPtr, $mhtString, $unpackDir, $htmlFilename, $partsSubDir);
     }

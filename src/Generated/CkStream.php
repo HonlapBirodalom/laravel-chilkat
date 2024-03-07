@@ -5,662 +5,598 @@ namespace HonlapBirodalom\Chilkat\Generated;
 class CkStream
 {
     public $_cPtr = null;
+    protected $_pData = array();
 
-    protected $_pData = [];
-
-    public function __construct($res = null)
+    function __construct($res = null)
     {
         if (is_resource($res) && get_resource_type($res) === '_p_CkStream') {
             $this->_cPtr = $res;
-
             return;
         }
         $this->_cPtr = new_CkStream();
     }
 
-    public function __get($var)
+    function __get($var)
     {
-        if ($var === 'thisown') {
-            return swig_chilkat_9_5_0_get_newobject($this->_cPtr);
-        }
-
+        if ($var === 'thisown') return swig_chilkat_9_5_0_get_newobject($this->_cPtr);
         return $this->_pData[$var];
     }
 
-    public function __set($var, $value)
+    function __set($var, $value)
     {
-        if ($var === 'thisown') {
-            return swig_chilkat_9_5_0_alter_newobject($this->_cPtr, $value);
-        }
+        if ($var === 'thisown') return swig_chilkat_9_5_0_alter_newobject($this->_cPtr, $value);
         $this->_pData[$var] = $value;
     }
 
-    public function __isset($var)
+    function __isset($var)
     {
-        if ($var === 'thisown') {
-            return true;
-        }
-
+        if ($var === 'thisown') return true;
         return array_key_exists($var, $this->_pData);
     }
 
-    public function get_Utf8()
+    function get_Utf8()
     {
         return CkStream_get_Utf8($this->_cPtr);
     }
 
-    public function put_Utf8($b)
+    function put_Utf8($b)
     {
         CkStream_put_Utf8($this->_cPtr, $b);
     }
 
-    public function put_EventCallbackObject($progress)
+    function put_EventCallbackObject($progress)
     {
         CkStream_put_EventCallbackObject($this->_cPtr, $progress);
     }
 
-    public function get_AbortCurrent()
+    function get_AbortCurrent()
     {
         return CkStream_get_AbortCurrent($this->_cPtr);
     }
 
-    public function put_AbortCurrent($newVal)
+    function put_AbortCurrent($newVal)
     {
         CkStream_put_AbortCurrent($this->_cPtr, $newVal);
     }
 
-    public function get_CanRead()
+    function get_CanRead()
     {
         return CkStream_get_CanRead($this->_cPtr);
     }
 
-    public function get_CanWrite()
+    function get_CanWrite()
     {
         return CkStream_get_CanWrite($this->_cPtr);
     }
 
-    public function get_DataAvailable()
+    function get_DataAvailable()
     {
         return CkStream_get_DataAvailable($this->_cPtr);
     }
 
-    public function get_DebugLogFilePath($str)
+    function get_DebugLogFilePath($str)
     {
         CkStream_get_DebugLogFilePath($this->_cPtr, $str);
     }
 
-    public function debugLogFilePath()
+    function debugLogFilePath()
     {
         return CkStream_debugLogFilePath($this->_cPtr);
     }
 
-    public function put_DebugLogFilePath($newVal)
+    function put_DebugLogFilePath($newVal)
     {
         CkStream_put_DebugLogFilePath($this->_cPtr, $newVal);
     }
 
-    public function get_DefaultChunkSize()
+    function get_DefaultChunkSize()
     {
         return CkStream_get_DefaultChunkSize($this->_cPtr);
     }
 
-    public function put_DefaultChunkSize($newVal)
+    function put_DefaultChunkSize($newVal)
     {
         CkStream_put_DefaultChunkSize($this->_cPtr, $newVal);
     }
 
-    public function get_EndOfStream()
+    function get_EndOfStream()
     {
         return CkStream_get_EndOfStream($this->_cPtr);
     }
 
-    public function get_IsWriteClosed()
+    function get_HeartbeatMs()
+    {
+        return CkStream_get_HeartbeatMs($this->_cPtr);
+    }
+
+    function put_HeartbeatMs($newVal)
+    {
+        CkStream_put_HeartbeatMs($this->_cPtr, $newVal);
+    }
+
+    function get_IsWriteClosed()
     {
         return CkStream_get_IsWriteClosed($this->_cPtr);
     }
 
-    public function get_LastErrorHtml($str)
+    function get_LastErrorHtml($str)
     {
         CkStream_get_LastErrorHtml($this->_cPtr, $str);
     }
 
-    public function lastErrorHtml()
+    function lastErrorHtml()
     {
         return CkStream_lastErrorHtml($this->_cPtr);
     }
 
-    public function get_LastErrorText($str)
+    function get_LastErrorText($str)
     {
         CkStream_get_LastErrorText($this->_cPtr, $str);
     }
 
-    public function lastErrorText()
+    function lastErrorText()
     {
         return CkStream_lastErrorText($this->_cPtr);
     }
 
-    public function get_LastErrorXml($str)
+    function get_LastErrorXml($str)
     {
         CkStream_get_LastErrorXml($this->_cPtr, $str);
     }
 
-    public function lastErrorXml()
+    function lastErrorXml()
     {
         return CkStream_lastErrorXml($this->_cPtr);
     }
 
-    public function get_LastMethodSuccess()
+    function get_LastMethodSuccess()
     {
         return CkStream_get_LastMethodSuccess($this->_cPtr);
     }
 
-    public function put_LastMethodSuccess($newVal)
+    function put_LastMethodSuccess($newVal)
     {
         CkStream_put_LastMethodSuccess($this->_cPtr, $newVal);
     }
 
-    public function get_Length32()
+    function get_Length32()
     {
         return CkStream_get_Length32($this->_cPtr);
     }
 
-    public function put_Length32($newVal)
+    function put_Length32($newVal)
     {
         CkStream_put_Length32($this->_cPtr, $newVal);
     }
 
-    public function get_ReadFailReason()
+    function get_ReadFailReason()
     {
         return CkStream_get_ReadFailReason($this->_cPtr);
     }
 
-    public function get_ReadTimeoutMs()
+    function get_ReadTimeoutMs()
     {
         return CkStream_get_ReadTimeoutMs($this->_cPtr);
     }
 
-    public function put_ReadTimeoutMs($newVal)
+    function put_ReadTimeoutMs($newVal)
     {
         CkStream_put_ReadTimeoutMs($this->_cPtr, $newVal);
     }
 
-    public function get_SinkFile($str)
+    function get_SinkFile($str)
     {
         CkStream_get_SinkFile($this->_cPtr, $str);
     }
 
-    public function sinkFile()
+    function sinkFile()
     {
         return CkStream_sinkFile($this->_cPtr);
     }
 
-    public function put_SinkFile($newVal)
+    function put_SinkFile($newVal)
     {
         CkStream_put_SinkFile($this->_cPtr, $newVal);
     }
 
-    public function get_SinkFileAppend()
+    function get_SinkFileAppend()
     {
         return CkStream_get_SinkFileAppend($this->_cPtr);
     }
 
-    public function put_SinkFileAppend($newVal)
+    function put_SinkFileAppend($newVal)
     {
         CkStream_put_SinkFileAppend($this->_cPtr, $newVal);
     }
 
-    public function get_SourceFile($str)
+    function get_SourceFile($str)
     {
         CkStream_get_SourceFile($this->_cPtr, $str);
     }
 
-    public function sourceFile()
+    function sourceFile()
     {
         return CkStream_sourceFile($this->_cPtr);
     }
 
-    public function put_SourceFile($newVal)
+    function put_SourceFile($newVal)
     {
         CkStream_put_SourceFile($this->_cPtr, $newVal);
     }
 
-    public function get_SourceFilePart()
+    function get_SourceFilePart()
     {
         return CkStream_get_SourceFilePart($this->_cPtr);
     }
 
-    public function put_SourceFilePart($newVal)
+    function put_SourceFilePart($newVal)
     {
         CkStream_put_SourceFilePart($this->_cPtr, $newVal);
     }
 
-    public function get_SourceFilePartSize()
+    function get_SourceFilePartSize()
     {
         return CkStream_get_SourceFilePartSize($this->_cPtr);
     }
 
-    public function put_SourceFilePartSize($newVal)
+    function put_SourceFilePartSize($newVal)
     {
         CkStream_put_SourceFilePartSize($this->_cPtr, $newVal);
     }
 
-    public function get_StringBom()
+    function get_StringBom()
     {
         return CkStream_get_StringBom($this->_cPtr);
     }
 
-    public function put_StringBom($newVal)
+    function put_StringBom($newVal)
     {
         CkStream_put_StringBom($this->_cPtr, $newVal);
     }
 
-    public function get_StringCharset($str)
+    function get_StringCharset($str)
     {
         CkStream_get_StringCharset($this->_cPtr, $str);
     }
 
-    public function stringCharset()
+    function stringCharset()
     {
         return CkStream_stringCharset($this->_cPtr);
     }
 
-    public function put_StringCharset($newVal)
+    function put_StringCharset($newVal)
     {
         CkStream_put_StringCharset($this->_cPtr, $newVal);
     }
 
-    public function get_VerboseLogging()
+    function get_VerboseLogging()
     {
         return CkStream_get_VerboseLogging($this->_cPtr);
     }
 
-    public function put_VerboseLogging($newVal)
+    function put_VerboseLogging($newVal)
     {
         CkStream_put_VerboseLogging($this->_cPtr, $newVal);
     }
 
-    public function get_Version($str)
+    function get_Version($str)
     {
         CkStream_get_Version($this->_cPtr, $str);
     }
 
-    public function version()
+    function version()
     {
         return CkStream_version($this->_cPtr);
     }
 
-    public function get_WriteFailReason()
+    function get_WriteFailReason()
     {
         return CkStream_get_WriteFailReason($this->_cPtr);
     }
 
-    public function get_WriteTimeoutMs()
+    function get_WriteTimeoutMs()
     {
         return CkStream_get_WriteTimeoutMs($this->_cPtr);
     }
 
-    public function put_WriteTimeoutMs($newVal)
+    function put_WriteTimeoutMs($newVal)
     {
         CkStream_put_WriteTimeoutMs($this->_cPtr, $newVal);
     }
 
-    public function LoadTaskCaller($task)
+    function LoadTaskCaller($task)
     {
         return CkStream_LoadTaskCaller($this->_cPtr, $task);
     }
 
-    public function ReadBd($binData)
+    function ReadBd($binData)
     {
         return CkStream_ReadBd($this->_cPtr, $binData);
     }
 
-    public function ReadBdAsync($binData)
+    function ReadBdAsync($binData)
     {
         $r = CkStream_ReadBdAsync($this->_cPtr, $binData);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function ReadBytes($outBytes)
+    function ReadBytes($outBytes)
     {
         return CkStream_ReadBytes($this->_cPtr, $outBytes);
     }
 
-    public function ReadBytesAsync()
+    function ReadBytesAsync()
     {
         $r = CkStream_ReadBytesAsync($this->_cPtr);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function readBytesENC($encoding)
+    function readBytesENC($encoding)
     {
         return CkStream_readBytesENC($this->_cPtr, $encoding);
     }
 
-    public function ReadBytesENCAsync($encoding)
+    function ReadBytesENCAsync($encoding)
     {
         $r = CkStream_ReadBytesENCAsync($this->_cPtr, $encoding);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function ReadNBytes($numBytes, $outBytes)
+    function ReadNBytes($numBytes, $outBytes)
     {
         return CkStream_ReadNBytes($this->_cPtr, $numBytes, $outBytes);
     }
 
-    public function ReadNBytesAsync($numBytes)
+    function ReadNBytesAsync($numBytes)
     {
         $r = CkStream_ReadNBytesAsync($this->_cPtr, $numBytes);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function readNBytesENC($numBytes, $encoding)
+    function readNBytesENC($numBytes, $encoding)
     {
         return CkStream_readNBytesENC($this->_cPtr, $numBytes, $encoding);
     }
 
-    public function ReadNBytesENCAsync($numBytes, $encoding)
+    function ReadNBytesENCAsync($numBytes, $encoding)
     {
         $r = CkStream_ReadNBytesENCAsync($this->_cPtr, $numBytes, $encoding);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function ReadSb($sb)
+    function ReadSb($sb)
     {
         return CkStream_ReadSb($this->_cPtr, $sb);
     }
 
-    public function ReadSbAsync($sb)
+    function ReadSbAsync($sb)
     {
         $r = CkStream_ReadSbAsync($this->_cPtr, $sb);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function readString()
+    function readString()
     {
         return CkStream_readString($this->_cPtr);
     }
 
-    public function ReadStringAsync()
+    function ReadStringAsync()
     {
         $r = CkStream_ReadStringAsync($this->_cPtr);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function readToCRLF()
+    function readToCRLF()
     {
         return CkStream_readToCRLF($this->_cPtr);
     }
 
-    public function ReadToCRLFAsync()
+    function ReadToCRLFAsync()
     {
         $r = CkStream_ReadToCRLFAsync($this->_cPtr);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function readUntilMatch($matchStr)
+    function readUntilMatch($matchStr)
     {
         return CkStream_readUntilMatch($this->_cPtr, $matchStr);
     }
 
-    public function ReadUntilMatchAsync($matchStr)
+    function ReadUntilMatchAsync($matchStr)
     {
         $r = CkStream_ReadUntilMatchAsync($this->_cPtr, $matchStr);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function Reset()
+    function Reset()
     {
         CkStream_Reset($this->_cPtr);
     }
 
-    public function RunStream()
+    function RunStream()
     {
         return CkStream_RunStream($this->_cPtr);
     }
 
-    public function RunStreamAsync()
+    function RunStreamAsync()
     {
         $r = CkStream_RunStreamAsync($this->_cPtr);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function SaveLastError($path)
+    function SaveLastError($path)
     {
         return CkStream_SaveLastError($this->_cPtr, $path);
     }
 
-    public function SetSinkStream($strm)
+    function SetSinkStream($strm)
     {
         return CkStream_SetSinkStream($this->_cPtr, $strm);
     }
 
-    public function SetSourceBytes($sourceData)
+    function SetSourceBytes($sourceData)
     {
         return CkStream_SetSourceBytes($this->_cPtr, $sourceData);
     }
 
-    public function SetSourceStream($strm)
+    function SetSourceStream($strm)
     {
         return CkStream_SetSourceStream($this->_cPtr, $strm);
     }
 
-    public function SetSourceString($srcStr, $charset)
+    function SetSourceString($srcStr, $charset)
     {
         return CkStream_SetSourceString($this->_cPtr, $srcStr, $charset);
     }
 
-    public function WriteBd($binData)
+    function WriteBd($binData)
     {
         return CkStream_WriteBd($this->_cPtr, $binData);
     }
 
-    public function WriteBdAsync($binData)
+    function WriteBdAsync($binData)
     {
         $r = CkStream_WriteBdAsync($this->_cPtr, $binData);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function WriteByte($byteVal)
+    function WriteByte($byteVal)
     {
         return CkStream_WriteByte($this->_cPtr, $byteVal);
     }
 
-    public function WriteByteAsync($byteVal)
+    function WriteByteAsync($byteVal)
     {
         $r = CkStream_WriteByteAsync($this->_cPtr, $byteVal);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function WriteBytes($byteData)
+    function WriteBytes($byteData)
     {
         return CkStream_WriteBytes($this->_cPtr, $byteData);
     }
 
-    public function WriteBytesAsync($byteData)
+    function WriteBytesAsync($byteData)
     {
         $r = CkStream_WriteBytesAsync($this->_cPtr, $byteData);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function WriteBytesENC($byteData, $encoding)
+    function WriteBytesENC($byteData, $encoding)
     {
         return CkStream_WriteBytesENC($this->_cPtr, $byteData, $encoding);
     }
 
-    public function WriteBytesENCAsync($byteData, $encoding)
+    function WriteBytesENCAsync($byteData, $encoding)
     {
         $r = CkStream_WriteBytesENCAsync($this->_cPtr, $byteData, $encoding);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function WriteClose()
+    function WriteClose()
     {
         return CkStream_WriteClose($this->_cPtr);
     }
 
-    public function WriteSb($sb)
+    function WriteSb($sb)
     {
         return CkStream_WriteSb($this->_cPtr, $sb);
     }
 
-    public function WriteSbAsync($sb)
+    function WriteSbAsync($sb)
     {
         $r = CkStream_WriteSbAsync($this->_cPtr, $sb);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function WriteString($str)
+    function WriteString($str)
     {
         return CkStream_WriteString($this->_cPtr, $str);
     }
 
-    public function WriteStringAsync($str)
+    function WriteStringAsync($str)
     {
         $r = CkStream_WriteStringAsync($this->_cPtr, $str);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 }

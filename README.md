@@ -17,6 +17,7 @@ Compatible with officially supported PHP versions by Laravel 9.
 | Plugin version | Chilkat version |
 |:---------------|:----------------|
 | 1.x            | 9.5.0.94        |
+| 2.x            | 9.5.0.97        |
 
 #### Laravel 10
 
@@ -25,6 +26,7 @@ Compatible with officially supported PHP versions by Laravel 10.
 | Plugin version | Chilkat version |
 |:---------------|:----------------|
 | 1.x            | 9.5.0.94        |
+| 2.x            | 9.5.0.97        |
 
 ### Laravel
 
