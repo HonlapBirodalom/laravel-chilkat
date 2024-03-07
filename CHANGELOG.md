@@ -2,6 +2,17 @@
 
 All notable changes to `laravel-chilkat` will be documented in this file.
 
+## 1.3.0 - 2024-03-07
+
+### What's Changed
+
+* Bump ramsey/composer-install from 2 to 3 by @dependabot in https://github.com/HonlapBirodalom/laravel-chilkat/pull/20
+* Update packages by @SztpGabor in https://github.com/HonlapBirodalom/laravel-chilkat/pull/21
+* Feature/1.x/Update spatie changes by @SztpGabor in https://github.com/HonlapBirodalom/laravel-chilkat/pull/22
+* Bump version to 1.3.0 by @SztpGabor in https://github.com/HonlapBirodalom/laravel-chilkat/pull/23
+
+**Full Changelog**: https://github.com/HonlapBirodalom/laravel-chilkat/compare/1.2.0...1.3.0
+
 ## 1.2.0 - 2024-01-05
 
 ### What's Changed
