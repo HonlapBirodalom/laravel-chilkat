@@ -2,6 +2,15 @@
 
 All notable changes to `laravel-chilkat` will be documented in this file.
 
+## 2.0.0 - 2024-03-07
+
+### What's Changed
+
+* Feature/2.x/Update Chilkat generated files by @SztpGabor in https://github.com/HonlapBirodalom/laravel-chilkat/pull/26
+* Bump verstion to 2.0.0 by @SztpGabor in https://github.com/HonlapBirodalom/laravel-chilkat/pull/27
+
+**Full Changelog**: https://github.com/HonlapBirodalom/laravel-chilkat/compare/1.3.1...2.0.0
+
 ## 1.3.1 - 2024-03-07
 
 ### What's Changed
