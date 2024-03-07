@@ -10,10 +10,23 @@ This package helps you to implement [Chilkat Software](https://www.chilkatsoft.c
 
 ### Compatibility
 
-| Plugin version | Laravel version | PHP version | Chilkat PHP version |
-|:---------------|:----------------|:------------|:--------------------|
-| 1.x            | 9.x (\>=9.28)   | \>= 8.0     | \>= 9.5.0.94        |
-| 1.x            | 10.x (\>=10.0)  | \>= 8.1     | \>= 9.5.0.94        |
+#### Laravel 9
+
+Compatible with officially supported PHP versions by Laravel 9.
+
+| Plugin version | Chilkat PHP version |
+|:---------------|:--------------------|
+| 1.x            | 9.5.0.94            |
+| 2.x            | 9.5.0.97            |
+
+#### Laravel 10
+
+Compatible with officially supported PHP versions by Laravel 10.
+
+| Plugin version | Chilkat PHP version |
+|:---------------|:--------------------|
+| 1.x            | 9.5.0.94            |
+| 2.x            | 9.5.0.97            |
 
 ### Laravel
 

@@ -5,151 +5,141 @@ namespace HonlapBirodalom\Chilkat\Generated;
 class CkDtObj
 {
     public $_cPtr = null;
+    protected $_pData = array();
 
-    protected $_pData = [];
-
-    public function __construct($res = null)
+    function __construct($res = null)
     {
         if (is_resource($res) && get_resource_type($res) === '_p_CkDtObj') {
             $this->_cPtr = $res;
-
             return;
         }
         $this->_cPtr = new_CkDtObj();
     }
 
-    public function __get($var)
+    function __get($var)
     {
-        if ($var === 'thisown') {
-            return swig_chilkat_9_5_0_get_newobject($this->_cPtr);
-        }
-
+        if ($var === 'thisown') return swig_chilkat_9_5_0_get_newobject($this->_cPtr);
         return $this->_pData[$var];
     }
 
-    public function __set($var, $value)
+    function __set($var, $value)
     {
-        if ($var === 'thisown') {
-            return swig_chilkat_9_5_0_alter_newobject($this->_cPtr, $value);
-        }
+        if ($var === 'thisown') return swig_chilkat_9_5_0_alter_newobject($this->_cPtr, $value);
         $this->_pData[$var] = $value;
     }
 
-    public function __isset($var)
+    function __isset($var)
     {
-        if ($var === 'thisown') {
-            return true;
-        }
-
+        if ($var === 'thisown') return true;
         return array_key_exists($var, $this->_pData);
     }
 
-    public function get_Utf8()
+    function get_Utf8()
     {
         return CkDtObj_get_Utf8($this->_cPtr);
     }
 
-    public function put_Utf8($b)
+    function put_Utf8($b)
     {
         CkDtObj_put_Utf8($this->_cPtr, $b);
     }
 
-    public function get_Utc()
+    function get_Utc()
     {
         return CkDtObj_get_Utc($this->_cPtr);
     }
 
-    public function put_Utc($newVal)
+    function put_Utc($newVal)
     {
         CkDtObj_put_Utc($this->_cPtr, $newVal);
     }
 
-    public function get_Year()
+    function get_Year()
     {
         return CkDtObj_get_Year($this->_cPtr);
     }
 
-    public function put_Year($newVal)
+    function put_Year($newVal)
     {
         CkDtObj_put_Year($this->_cPtr, $newVal);
     }
 
-    public function get_Month()
+    function get_Month()
     {
         return CkDtObj_get_Month($this->_cPtr);
     }
 
-    public function put_Month($newVal)
+    function put_Month($newVal)
     {
         CkDtObj_put_Month($this->_cPtr, $newVal);
     }
 
-    public function get_Day()
+    function get_Day()
     {
         return CkDtObj_get_Day($this->_cPtr);
     }
 
-    public function put_Day($newVal)
+    function put_Day($newVal)
     {
         CkDtObj_put_Day($this->_cPtr, $newVal);
     }
 
-    public function get_Hour()
+    function get_Hour()
     {
         return CkDtObj_get_Hour($this->_cPtr);
     }
 
-    public function put_Hour($newVal)
+    function put_Hour($newVal)
     {
         CkDtObj_put_Hour($this->_cPtr, $newVal);
     }
 
-    public function get_Minute()
+    function get_Minute()
     {
         return CkDtObj_get_Minute($this->_cPtr);
     }
 
-    public function put_Minute($newVal)
+    function put_Minute($newVal)
     {
         CkDtObj_put_Minute($this->_cPtr, $newVal);
     }
 
-    public function get_Second()
+    function get_Second()
     {
         return CkDtObj_get_Second($this->_cPtr);
     }
 
-    public function put_Second($newVal)
+    function put_Second($newVal)
     {
         CkDtObj_put_Second($this->_cPtr, $newVal);
     }
 
-    public function get_StructTmYear()
+    function get_StructTmYear()
     {
         return CkDtObj_get_StructTmYear($this->_cPtr);
     }
 
-    public function put_StructTmYear($newVal)
+    function put_StructTmYear($newVal)
     {
         CkDtObj_put_StructTmYear($this->_cPtr, $newVal);
     }
 
-    public function get_StructTmMonth()
+    function get_StructTmMonth()
     {
         return CkDtObj_get_StructTmMonth($this->_cPtr);
     }
 
-    public function put_StructTmMonth($newVal)
+    function put_StructTmMonth($newVal)
     {
         CkDtObj_put_StructTmMonth($this->_cPtr, $newVal);
     }
 
-    public function serialize()
+    function serialize()
     {
         return CkDtObj_serialize($this->_cPtr);
     }
 
-    public function DeSerialize($serializedDtObj)
+    function DeSerialize($serializedDtObj)
     {
         CkDtObj_DeSerialize($this->_cPtr, $serializedDtObj);
     }
