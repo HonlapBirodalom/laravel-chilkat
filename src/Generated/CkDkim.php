@@ -5,497 +5,475 @@ namespace HonlapBirodalom\Chilkat\Generated;
 class CkDkim
 {
     public $_cPtr = null;
+    protected $_pData = array();
 
-    protected $_pData = [];
-
-    public function __construct($res = null)
+    function __construct($res = null)
     {
         if (is_resource($res) && get_resource_type($res) === '_p_CkDkim') {
             $this->_cPtr = $res;
-
             return;
         }
         $this->_cPtr = new_CkDkim();
     }
 
-    public function __get($var)
+    function __get($var)
     {
-        if ($var === 'thisown') {
-            return swig_chilkat_9_5_0_get_newobject($this->_cPtr);
-        }
-
+        if ($var === 'thisown') return swig_chilkat_9_5_0_get_newobject($this->_cPtr);
         return $this->_pData[$var];
     }
 
-    public function __set($var, $value)
+    function __set($var, $value)
     {
-        if ($var === 'thisown') {
-            return swig_chilkat_9_5_0_alter_newobject($this->_cPtr, $value);
-        }
+        if ($var === 'thisown') return swig_chilkat_9_5_0_alter_newobject($this->_cPtr, $value);
         $this->_pData[$var] = $value;
     }
 
-    public function __isset($var)
+    function __isset($var)
     {
-        if ($var === 'thisown') {
-            return true;
-        }
-
+        if ($var === 'thisown') return true;
         return array_key_exists($var, $this->_pData);
     }
 
-    public function get_Utf8()
+    function get_Utf8()
     {
         return CkDkim_get_Utf8($this->_cPtr);
     }
 
-    public function put_Utf8($b)
+    function put_Utf8($b)
     {
         CkDkim_put_Utf8($this->_cPtr, $b);
     }
 
-    public function put_EventCallbackObject($progress)
+    function put_EventCallbackObject($progress)
     {
         CkDkim_put_EventCallbackObject($this->_cPtr, $progress);
     }
 
-    public function get_AbortCurrent()
+    function get_AbortCurrent()
     {
         return CkDkim_get_AbortCurrent($this->_cPtr);
     }
 
-    public function put_AbortCurrent($newVal)
+    function put_AbortCurrent($newVal)
     {
         CkDkim_put_AbortCurrent($this->_cPtr, $newVal);
     }
 
-    public function get_DebugLogFilePath($str)
+    function get_DebugLogFilePath($str)
     {
         CkDkim_get_DebugLogFilePath($this->_cPtr, $str);
     }
 
-    public function debugLogFilePath()
+    function debugLogFilePath()
     {
         return CkDkim_debugLogFilePath($this->_cPtr);
     }
 
-    public function put_DebugLogFilePath($newVal)
+    function put_DebugLogFilePath($newVal)
     {
         CkDkim_put_DebugLogFilePath($this->_cPtr, $newVal);
     }
 
-    public function get_DkimAlg($str)
+    function get_DkimAlg($str)
     {
         CkDkim_get_DkimAlg($this->_cPtr, $str);
     }
 
-    public function dkimAlg()
+    function dkimAlg()
     {
         return CkDkim_dkimAlg($this->_cPtr);
     }
 
-    public function put_DkimAlg($newVal)
+    function put_DkimAlg($newVal)
     {
         CkDkim_put_DkimAlg($this->_cPtr, $newVal);
     }
 
-    public function get_DkimBodyLengthCount()
+    function get_DkimBodyLengthCount()
     {
         return CkDkim_get_DkimBodyLengthCount($this->_cPtr);
     }
 
-    public function put_DkimBodyLengthCount($newVal)
+    function put_DkimBodyLengthCount($newVal)
     {
         CkDkim_put_DkimBodyLengthCount($this->_cPtr, $newVal);
     }
 
-    public function get_DkimCanon($str)
+    function get_DkimCanon($str)
     {
         CkDkim_get_DkimCanon($this->_cPtr, $str);
     }
 
-    public function dkimCanon()
+    function dkimCanon()
     {
         return CkDkim_dkimCanon($this->_cPtr);
     }
 
-    public function put_DkimCanon($newVal)
+    function put_DkimCanon($newVal)
     {
         CkDkim_put_DkimCanon($this->_cPtr, $newVal);
     }
 
-    public function get_DkimDomain($str)
+    function get_DkimDomain($str)
     {
         CkDkim_get_DkimDomain($this->_cPtr, $str);
     }
 
-    public function dkimDomain()
+    function dkimDomain()
     {
         return CkDkim_dkimDomain($this->_cPtr);
     }
 
-    public function put_DkimDomain($newVal)
+    function put_DkimDomain($newVal)
     {
         CkDkim_put_DkimDomain($this->_cPtr, $newVal);
     }
 
-    public function get_DkimHeaders($str)
+    function get_DkimHeaders($str)
     {
         CkDkim_get_DkimHeaders($this->_cPtr, $str);
     }
 
-    public function dkimHeaders()
+    function dkimHeaders()
     {
         return CkDkim_dkimHeaders($this->_cPtr);
     }
 
-    public function put_DkimHeaders($newVal)
+    function put_DkimHeaders($newVal)
     {
         CkDkim_put_DkimHeaders($this->_cPtr, $newVal);
     }
 
-    public function get_DkimSelector($str)
+    function get_DkimSelector($str)
     {
         CkDkim_get_DkimSelector($this->_cPtr, $str);
     }
 
-    public function dkimSelector()
+    function dkimSelector()
     {
         return CkDkim_dkimSelector($this->_cPtr);
     }
 
-    public function put_DkimSelector($newVal)
+    function put_DkimSelector($newVal)
     {
         CkDkim_put_DkimSelector($this->_cPtr, $newVal);
     }
 
-    public function get_DomainKeyAlg($str)
+    function get_DomainKeyAlg($str)
     {
         CkDkim_get_DomainKeyAlg($this->_cPtr, $str);
     }
 
-    public function domainKeyAlg()
+    function domainKeyAlg()
     {
         return CkDkim_domainKeyAlg($this->_cPtr);
     }
 
-    public function put_DomainKeyAlg($newVal)
+    function put_DomainKeyAlg($newVal)
     {
         CkDkim_put_DomainKeyAlg($this->_cPtr, $newVal);
     }
 
-    public function get_DomainKeyCanon($str)
+    function get_DomainKeyCanon($str)
     {
         CkDkim_get_DomainKeyCanon($this->_cPtr, $str);
     }
 
-    public function domainKeyCanon()
+    function domainKeyCanon()
     {
         return CkDkim_domainKeyCanon($this->_cPtr);
     }
 
-    public function put_DomainKeyCanon($newVal)
+    function put_DomainKeyCanon($newVal)
     {
         CkDkim_put_DomainKeyCanon($this->_cPtr, $newVal);
     }
 
-    public function get_DomainKeyDomain($str)
+    function get_DomainKeyDomain($str)
     {
         CkDkim_get_DomainKeyDomain($this->_cPtr, $str);
     }
 
-    public function domainKeyDomain()
+    function domainKeyDomain()
     {
         return CkDkim_domainKeyDomain($this->_cPtr);
     }
 
-    public function put_DomainKeyDomain($newVal)
+    function put_DomainKeyDomain($newVal)
     {
         CkDkim_put_DomainKeyDomain($this->_cPtr, $newVal);
     }
 
-    public function get_DomainKeyHeaders($str)
+    function get_DomainKeyHeaders($str)
     {
         CkDkim_get_DomainKeyHeaders($this->_cPtr, $str);
     }
 
-    public function domainKeyHeaders()
+    function domainKeyHeaders()
     {
         return CkDkim_domainKeyHeaders($this->_cPtr);
     }
 
-    public function put_DomainKeyHeaders($newVal)
+    function put_DomainKeyHeaders($newVal)
     {
         CkDkim_put_DomainKeyHeaders($this->_cPtr, $newVal);
     }
 
-    public function get_DomainKeySelector($str)
+    function get_DomainKeySelector($str)
     {
         CkDkim_get_DomainKeySelector($this->_cPtr, $str);
     }
 
-    public function domainKeySelector()
+    function domainKeySelector()
     {
         return CkDkim_domainKeySelector($this->_cPtr);
     }
 
-    public function put_DomainKeySelector($newVal)
+    function put_DomainKeySelector($newVal)
     {
         CkDkim_put_DomainKeySelector($this->_cPtr, $newVal);
     }
 
-    public function get_HeartbeatMs()
+    function get_HeartbeatMs()
     {
         return CkDkim_get_HeartbeatMs($this->_cPtr);
     }
 
-    public function put_HeartbeatMs($newVal)
+    function put_HeartbeatMs($newVal)
     {
         CkDkim_put_HeartbeatMs($this->_cPtr, $newVal);
     }
 
-    public function get_LastErrorHtml($str)
+    function get_LastErrorHtml($str)
     {
         CkDkim_get_LastErrorHtml($this->_cPtr, $str);
     }
 
-    public function lastErrorHtml()
+    function lastErrorHtml()
     {
         return CkDkim_lastErrorHtml($this->_cPtr);
     }
 
-    public function get_LastErrorText($str)
+    function get_LastErrorText($str)
     {
         CkDkim_get_LastErrorText($this->_cPtr, $str);
     }
 
-    public function lastErrorText()
+    function lastErrorText()
     {
         return CkDkim_lastErrorText($this->_cPtr);
     }
 
-    public function get_LastErrorXml($str)
+    function get_LastErrorXml($str)
     {
         CkDkim_get_LastErrorXml($this->_cPtr, $str);
     }
 
-    public function lastErrorXml()
+    function lastErrorXml()
     {
         return CkDkim_lastErrorXml($this->_cPtr);
     }
 
-    public function get_LastMethodSuccess()
+    function get_LastMethodSuccess()
     {
         return CkDkim_get_LastMethodSuccess($this->_cPtr);
     }
 
-    public function put_LastMethodSuccess($newVal)
+    function put_LastMethodSuccess($newVal)
     {
         CkDkim_put_LastMethodSuccess($this->_cPtr, $newVal);
     }
 
-    public function get_VerboseLogging()
+    function get_VerboseLogging()
     {
         return CkDkim_get_VerboseLogging($this->_cPtr);
     }
 
-    public function put_VerboseLogging($newVal)
+    function put_VerboseLogging($newVal)
     {
         CkDkim_put_VerboseLogging($this->_cPtr, $newVal);
     }
 
-    public function get_VerifyInfo($str)
+    function get_VerifyInfo($str)
     {
         CkDkim_get_VerifyInfo($this->_cPtr, $str);
     }
 
-    public function verifyInfo()
+    function verifyInfo()
     {
         return CkDkim_verifyInfo($this->_cPtr);
     }
 
-    public function get_Version($str)
+    function get_Version($str)
     {
         CkDkim_get_Version($this->_cPtr, $str);
     }
 
-    public function version()
+    function version()
     {
         return CkDkim_version($this->_cPtr);
     }
 
-    public function AddDkimSignature($mimeIn, $outBytes)
+    function AddDkimSignature($mimeIn, $outBytes)
     {
         return CkDkim_AddDkimSignature($this->_cPtr, $mimeIn, $outBytes);
     }
 
-    public function AddDomainKeySignature($mimeIn, $outBytes)
+    function AddDomainKeySignature($mimeIn, $outBytes)
     {
         return CkDkim_AddDomainKeySignature($this->_cPtr, $mimeIn, $outBytes);
     }
 
-    public function DkimSign($mimeData)
+    function DkimSign($mimeData)
     {
         return CkDkim_DkimSign($this->_cPtr, $mimeData);
     }
 
-    public function DkimVerify($sigIndex, $mimeData)
+    function DkimVerify($sigIndex, $mimeData)
     {
         return CkDkim_DkimVerify($this->_cPtr, $sigIndex, $mimeData);
     }
 
-    public function DomainKeySign($mimeData)
+    function DomainKeySign($mimeData)
     {
         return CkDkim_DomainKeySign($this->_cPtr, $mimeData);
     }
 
-    public function DomainKeyVerify($sigIndex, $mimeData)
+    function DomainKeyVerify($sigIndex, $mimeData)
     {
         return CkDkim_DomainKeyVerify($this->_cPtr, $sigIndex, $mimeData);
     }
 
-    public function LoadDkimPk($privateKey, $optionalPassword)
+    function LoadDkimPk($privateKey, $optionalPassword)
     {
         return CkDkim_LoadDkimPk($this->_cPtr, $privateKey, $optionalPassword);
     }
 
-    public function LoadDkimPkBytes($privateKeyDer, $optionalPassword)
+    function LoadDkimPkBytes($privateKeyDer, $optionalPassword)
     {
         return CkDkim_LoadDkimPkBytes($this->_cPtr, $privateKeyDer, $optionalPassword);
     }
 
-    public function LoadDkimPkFile($privateKeyFilePath, $optionalPassword)
+    function LoadDkimPkFile($privateKeyFilePath, $optionalPassword)
     {
         return CkDkim_LoadDkimPkFile($this->_cPtr, $privateKeyFilePath, $optionalPassword);
     }
 
-    public function LoadDomainKeyPk($privateKey, $optionalPassword)
+    function LoadDomainKeyPk($privateKey, $optionalPassword)
     {
         return CkDkim_LoadDomainKeyPk($this->_cPtr, $privateKey, $optionalPassword);
     }
 
-    public function LoadDomainKeyPkBytes($privateKeyDer, $optionalPassword)
+    function LoadDomainKeyPkBytes($privateKeyDer, $optionalPassword)
     {
         return CkDkim_LoadDomainKeyPkBytes($this->_cPtr, $privateKeyDer, $optionalPassword);
     }
 
-    public function LoadDomainKeyPkFile($privateKeyFilePath, $optionalPassword)
+    function LoadDomainKeyPkFile($privateKeyFilePath, $optionalPassword)
     {
         return CkDkim_LoadDomainKeyPkFile($this->_cPtr, $privateKeyFilePath, $optionalPassword);
     }
 
-    public function LoadPublicKey($selector, $domain, $publicKey)
+    function LoadPublicKey($selector, $domain, $publicKey)
     {
         return CkDkim_LoadPublicKey($this->_cPtr, $selector, $domain, $publicKey);
     }
 
-    public function LoadPublicKeyFile($selector, $domain, $publicKeyFilepath)
+    function LoadPublicKeyFile($selector, $domain, $publicKeyFilepath)
     {
         return CkDkim_LoadPublicKeyFile($this->_cPtr, $selector, $domain, $publicKeyFilepath);
     }
 
-    public function LoadTaskCaller($task)
+    function LoadTaskCaller($task)
     {
         return CkDkim_LoadTaskCaller($this->_cPtr, $task);
     }
 
-    public function NumDkimSignatures($mimeData)
+    function NumDkimSignatures($mimeData)
     {
         return CkDkim_NumDkimSignatures($this->_cPtr, $mimeData);
     }
 
-    public function NumDkimSigs($mimeData)
+    function NumDkimSigs($mimeData)
     {
         return CkDkim_NumDkimSigs($this->_cPtr, $mimeData);
     }
 
-    public function NumDomainKeySignatures($mimeData)
+    function NumDomainKeySignatures($mimeData)
     {
         return CkDkim_NumDomainKeySignatures($this->_cPtr, $mimeData);
     }
 
-    public function NumDomainKeySigs($mimeData)
+    function NumDomainKeySigs($mimeData)
     {
         return CkDkim_NumDomainKeySigs($this->_cPtr, $mimeData);
     }
 
-    public function PrefetchPublicKey($selector, $domain)
+    function PrefetchPublicKey($selector, $domain)
     {
         return CkDkim_PrefetchPublicKey($this->_cPtr, $selector, $domain);
     }
 
-    public function PrefetchPublicKeyAsync($selector, $domain)
+    function PrefetchPublicKeyAsync($selector, $domain)
     {
         $r = CkDkim_PrefetchPublicKeyAsync($this->_cPtr, $selector, $domain);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function SaveLastError($path)
+    function SaveLastError($path)
     {
         return CkDkim_SaveLastError($this->_cPtr, $path);
     }
 
-    public function SetDkimPrivateKey($privateKey)
+    function SetDkimPrivateKey($privateKey)
     {
         return CkDkim_SetDkimPrivateKey($this->_cPtr, $privateKey);
     }
 
-    public function SetDomainKeyPrivateKey($privateKey)
+    function SetDomainKeyPrivateKey($privateKey)
     {
         return CkDkim_SetDomainKeyPrivateKey($this->_cPtr, $privateKey);
     }
 
-    public function UnlockComponent($unlockCode)
+    function UnlockComponent($unlockCode)
     {
         return CkDkim_UnlockComponent($this->_cPtr, $unlockCode);
     }
 
-    public function VerifyDkimSignature($sigIndex, $mimeData)
+    function VerifyDkimSignature($sigIndex, $mimeData)
     {
         return CkDkim_VerifyDkimSignature($this->_cPtr, $sigIndex, $mimeData);
     }
 
-    public function VerifyDkimSignatureAsync($sigIndex, $mimeData)
+    function VerifyDkimSignatureAsync($sigIndex, $mimeData)
     {
         $r = CkDkim_VerifyDkimSignatureAsync($this->_cPtr, $sigIndex, $mimeData);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 
-    public function VerifyDomainKeySignature($sigIndex, $mimeData)
+    function VerifyDomainKeySignature($sigIndex, $mimeData)
     {
         return CkDkim_VerifyDomainKeySignature($this->_cPtr, $sigIndex, $mimeData);
     }
 
-    public function VerifyDomainKeySignatureAsync($sigIndex, $mimeData)
+    function VerifyDomainKeySignatureAsync($sigIndex, $mimeData)
     {
         $r = CkDkim_VerifyDomainKeySignatureAsync($this->_cPtr, $sigIndex, $mimeData);
         if (is_resource($r)) {
             $c = substr(get_resource_type($r), (strpos(get_resource_type($r), '__') ? strpos(get_resource_type($r), '__') + 2 : 3));
-            if (class_exists($c)) {
-                return new $c($r);
-            }
-
+            if (class_exists($c)) return new $c($r);
             return new CkTask($r);
         }
-
         return $r;
     }
 }
