@@ -2,6 +2,15 @@
 
 All notable changes to `laravel-chilkat` will be documented in this file.
 
+## 3.0.2 - 2024-06-24
+
+### What's Changed
+
+* Fix PHP version issue in github action by @SztpGabor in https://github.com/HonlapBirodalom/laravel-chilkat/pull/35
+* Bump verstion to 3.0.2 by @SztpGabor in https://github.com/HonlapBirodalom/laravel-chilkat/pull/36
+
+**Full Changelog**: https://github.com/HonlapBirodalom/laravel-chilkat/compare/3.0.1...3.0.2
+
 ## 3.0.1 - 2024-06-24
 
 ### What's Changed
