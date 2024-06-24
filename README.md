@@ -10,9 +10,7 @@ This package helps you to implement [Chilkat Software](https://www.chilkatsoft.c
 
 ### Compatibility
 
-#### Laravel 9
-
-Compatible with officially supported PHP versions by Laravel.
+Compatible with officially supported PHP versions by Laravel. Staring from Laravel 11, PHP 8.2.0 or greater is required!
 
 | Plugin version | Chilkat version | Laravel version |
 |:---------------|:----------------|:----------------|
