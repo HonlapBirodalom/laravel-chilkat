@@ -2,6 +2,15 @@
 
 All notable changes to `laravel-chilkat` will be documented in this file.
 
+## 3.0.0 - 2024-06-24
+
+### What's Changed
+
+* Add Laravel 11 support by @SztpGabor in https://github.com/HonlapBirodalom/laravel-chilkat/pull/31
+* Bump verstion to 3.0.0 by @SztpGabor in https://github.com/HonlapBirodalom/laravel-chilkat/pull/32
+
+**Full Changelog**: https://github.com/HonlapBirodalom/laravel-chilkat/compare/2.0.0...3.0.0
+
 ## 2.0.0 - 2024-03-07
 
 ### What's Changed
